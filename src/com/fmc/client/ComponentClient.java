@@ -7,6 +7,17 @@ import com.fmc.factory.component.AbstractComponentFactory;
 import com.fmc.factory.component.CarComponentFactory;
 import com.fmc.factory.component.VanComponentFactory;
 
+/**
+ *
+ * Foo Motor Company
+ *
+ * Based on: "Java Design Pattern Essentials", Tony Bevis
+ *
+ * Date: Apr 23, 2014
+ *
+ * @author carolus
+ *
+ */
 public class ComponentClient {
 
 	public static void main(String[] args) {

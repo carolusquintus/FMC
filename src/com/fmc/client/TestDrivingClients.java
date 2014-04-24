@@ -5,6 +5,17 @@ import com.fmc.controls.impl.StandardControls;
 import com.fmc.engine.Engine;
 import com.fmc.engine.impl.StandardEngine;
 
+/**
+ *
+ * Foo Motor Company
+ *
+ * Based on: "Java Design Pattern Essentials", Tony Bevis
+ *
+ * Date: Apr 23, 2014
+ *
+ * @author carolus
+ *
+ */
 public class TestDrivingClients {
 	
 	public static void main(String[] args) {

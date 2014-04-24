@@ -3,6 +3,17 @@ package com.fmc.factory.vehicle;
 import com.fmc.vehicle.Vehicle;
 import com.fmc.vehicle.Vehicle.Colour;
 
+/**
+ *
+ * Foo Motor Company
+ *
+ * Based on: "Java Design Pattern Essentials", Tony Bevis
+ *
+ * Date: Apr 23, 2014
+ *
+ * @author carolus
+ *
+ */
 public abstract class VehicleFactory {
 
 	public enum DrivingStyle {

@@ -2,6 +2,17 @@ package com.fmc.controls;
 
 import com.fmc.engine.Engine;
 
+/**
+ *
+ * Foo Motor Company
+ *
+ * Based on: "Java Design Pattern Essentials", Tony Bevis
+ *
+ * Date: Apr 23, 2014
+ *
+ * @author carolus
+ *
+ */
 public abstract class AbstractDriverControls {
 	
 	private Engine engine;

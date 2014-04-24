@@ -3,6 +3,17 @@ package com.fmc.item;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ *
+ * Foo Motor Company
+ *
+ * Based on: "Java Design Pattern Essentials", Tony Bevis
+ *
+ * Date: Apr 23, 2014
+ *
+ * @author carolus
+ *
+ */
 public class Assembly extends Item {
 
 	public List<Item> items;

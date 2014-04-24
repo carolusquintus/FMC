@@ -1,8 +1,18 @@
 package com.fmc.client;
 
 import com.fmc.serializer.SerialNumberGenerator;
-import com.fmc.serializer.SerialNumberGeneratorTraditional;
 
+/**
+ *
+ * Foo Motor Company
+ *
+ * Based on: "Java Design Pattern Essentials", Tony Bevis
+ *
+ * Date: Apr 23, 2014
+ *
+ * @author carolus
+ *
+ */
 public class NumberGeneratorClient {
 
 	public static void main(String[] args) {

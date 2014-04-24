@@ -1,8 +1,18 @@
 package com.fmc.factory.vehicle;
 
-import com.fmc.component.Body;
 import com.fmc.vehicle.Vehicle;
 
+/**
+ *
+ * Foo Motor Company
+ *
+ * Based on: "Java Design Pattern Essentials", Tony Bevis
+ *
+ * Date: Apr 23, 2014
+ *
+ * @author carolus
+ *
+ */
 public class CarDirector extends VehicleDirector {
 
 	@Override

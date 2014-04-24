@@ -6,6 +6,17 @@ import com.fmc.vehicle.Vehicle;
 import com.fmc.vehicle.van.impl.BoxVan;
 import com.fmc.vehicle.van.impl.Pickup;
 
+/**
+ *
+ * Foo Motor Company
+ *
+ * Based on: "Java Design Pattern Essentials", Tony Bevis
+ *
+ * Date: Apr 23, 2014
+ *
+ * @author carolus
+ *
+ */
 public class VanFactory extends VehicleFactory {
 
 	@Override

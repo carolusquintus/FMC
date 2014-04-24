@@ -7,6 +7,17 @@ import com.fmc.component.impl.CarBody;
 import com.fmc.component.impl.CarChassis;
 import com.fmc.component.impl.CarWindows;
 
+/**
+ *
+ * Foo Motor Company
+ *
+ * Based on: "Java Design Pattern Essentials", Tony Bevis
+ *
+ * Date: Apr 23, 2014
+ *
+ * @author carolus
+ *
+ */
 public class CarComponentFactory extends AbstractComponentFactory {
 
 	@Override

@@ -9,11 +9,22 @@ import com.fmc.engine.impl.SuperGreenEngineAdapter;
 import com.fmc.engine.impl.TurboEngine;
 import com.gmc.engine.SuperGreenEngine;
 
+/**
+ *
+ * Foo Motor Company
+ *
+ * Based on: "Java Design Pattern Essentials", Tony Bevis
+ *
+ * Date: Apr 23, 2014
+ *
+ * @author carolus
+ *
+ */
 public class ProductionEngineClient {
 
 	public static void main(String[] args) {
 		
-		List<Engine> engines = new ArrayList();
+		List<Engine> engines = new ArrayList<>();
 		engines.add(new StandardEngine(1300));
 		engines.add(new StandardEngine(1300));
 		engines.add(new TurboEngine(1300));

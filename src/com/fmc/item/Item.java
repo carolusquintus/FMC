@@ -1,5 +1,16 @@
 package com.fmc.item;
 
+/**
+ *
+ * Foo Motor Company
+ *
+ * Based on: "Java Design Pattern Essentials", Tony Bevis
+ *
+ * Date: Apr 23, 2014
+ *
+ * @author carolus
+ *
+ */
 public abstract class Item {
 	private String description;
 	private int cost;

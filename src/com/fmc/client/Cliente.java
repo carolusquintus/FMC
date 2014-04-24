@@ -1,7 +1,15 @@
 package com.fmc.client;
 
 /**
- * Created by carolus on 8/04/14.
+ *
+ * Foo Motor Company
+ *
+ * Based on: "Java Design Pattern Essentials", Tony Bevis
+ *
+ * Date: Apr 23, 2014
+ *
+ * @author carolus
+ *
  */
 public class Cliente {
 }

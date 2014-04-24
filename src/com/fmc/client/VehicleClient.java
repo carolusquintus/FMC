@@ -8,6 +8,17 @@ import com.fmc.factory.vehicle.VehicleFactory.DrivingStyle;
 import com.fmc.vehicle.Vehicle;
 import com.fmc.vehicle.Vehicle.Colour;
 
+/**
+ *
+ * Foo Motor Company
+ *
+ * Based on: "Java Design Pattern Essentials", Tony Bevis
+ *
+ * Date: Apr 23, 2014
+ *
+ * @author carolus
+ *
+ */
 public class VehicleClient {
 
 	public static void main(String[] args) {

@@ -4,6 +4,17 @@ import com.fmc.item.Assembly;
 import com.fmc.item.Item;
 import com.fmc.item.Part;
 
+/**
+ *
+ * Foo Motor Company
+ *
+ * Based on: "Java Design Pattern Essentials", Tony Bevis
+ *
+ * Date: Apr 23, 2014
+ *
+ * @author carolus
+ *
+ */
 public class ItemManager {
 
 	public static void main(String[] args) {

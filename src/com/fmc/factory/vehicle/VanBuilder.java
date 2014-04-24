@@ -4,6 +4,17 @@ import com.fmc.factory.component.VanComponentFactory;
 import com.fmc.vehicle.Vehicle;
 import com.fmc.vehicle.van.AbstractVan;
 
+/**
+ *
+ * Foo Motor Company
+ *
+ * Based on: "Java Design Pattern Essentials", Tony Bevis
+ *
+ * Date: Apr 23, 2014
+ *
+ * @author carolus
+ *
+ */
 public class VanBuilder extends VehicleBuilder {
 	
 	private AbstractVan van;

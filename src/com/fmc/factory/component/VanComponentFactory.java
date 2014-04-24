@@ -7,6 +7,17 @@ import com.fmc.component.impl.VanBody;
 import com.fmc.component.impl.VanChassis;
 import com.fmc.component.impl.VanWindows;
 
+/**
+ *
+ * Foo Motor Company
+ *
+ * Based on: "Java Design Pattern Essentials", Tony Bevis
+ *
+ * Date: Apr 23, 2014
+ *
+ * @author carolus
+ *
+ */
 public class VanComponentFactory extends AbstractComponentFactory {
 
 	@Override

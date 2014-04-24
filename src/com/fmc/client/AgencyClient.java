@@ -3,6 +3,17 @@ package com.fmc.client;
 import com.fmc.manager.VehicleManagerLazy;
 import com.fmc.vehicle.Vehicle;
 
+/**
+ *
+ * Foo Motor Company
+ *
+ * Based on: "Java Design Pattern Essentials", Tony Bevis
+ *
+ * Date: Apr 23, 2014
+ *
+ * @author carolus
+ *
+ */
 public class AgencyClient {
 
 	public static void main(String[] args) {

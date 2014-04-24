@@ -6,6 +6,17 @@ import com.fmc.vehicle.car.impl.Coupe;
 import com.fmc.vehicle.car.impl.Saloon;
 import com.fmc.vehicle.car.impl.Sport;
 
+/**
+ *
+ * Foo Motor Company
+ *
+ * Based on: "Java Design Pattern Essentials", Tony Bevis
+ *
+ * Date: Apr 23, 2014
+ *
+ * @author carolus
+ *
+ */
 public class VehicleManagerLazy {
 
 	public Vehicle saloon, coupe, sport, boxVan, pickup;
