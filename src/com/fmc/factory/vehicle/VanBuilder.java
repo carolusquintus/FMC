@@ -1,5 +1,7 @@
 package com.fmc.factory.vehicle;
 
+import org.apache.log4j.Logger;
+
 import com.fmc.factory.component.VanComponentFactory;
 import com.fmc.vehicle.Vehicle;
 import com.fmc.vehicle.van.AbstractVan;
@@ -17,6 +19,8 @@ import com.fmc.vehicle.van.AbstractVan;
  */
 public class VanBuilder extends VehicleBuilder {
 	
+	private static final Logger logger = Logger.getLogger(VanBuilder.class);
+	
 	private AbstractVan van;
 	
 	public VanBuilder(final AbstractVan van) {
@@ -27,27 +31,27 @@ public class VanBuilder extends VehicleBuilder {
 	@Override
 	public void buildBody() {
 		super.buildBody();
-		System.out.println("Building van body");
+		logger.info("Building van body");
 		factory.createBody().getBodyParts();
 	}
 
 	@Override
 	public void buildChassis() {
 		super.buildChassis();
-		System.out.println("Building van chassis");
+		logger.info("Building van chassis");
 		factory.createChassis().getChassisParts();
 	}
 
 	@Override
 	public void buildReinforcedStorageArea() {
 		super.buildReinforcedStorageArea();
-		System.out.println("Building van storage area");
+		logger.info("Building van storage area");
 	}
 
 	@Override
 	public void buildWindows() {
 		super.buildWindows();
-		System.out.println("Building van windows");
+		logger.info("Building van windows");
 		factory.createWindows().getWindowParts();
 	}
 

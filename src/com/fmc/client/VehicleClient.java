@@ -1,5 +1,7 @@
 package com.fmc.client;
 
+import org.apache.log4j.Logger;
+
 import com.fmc.factory.vehicle.CarFactory;
 import com.fmc.factory.vehicle.VanFactory;
 import com.fmc.factory.vehicle.VehicleFactory;
@@ -17,9 +19,13 @@ import com.fmc.vehicle.Vehicle.Colour;
  * Date: Apr 23, 2014
  *
  * @author carolus
+ * 
+ * Class client to test Factory Method Pattern
  *
  */
 public class VehicleClient {
+	
+	private static final Logger logger = Logger.getLogger(VehicleClient.class);
 
 	public static void main(String[] args) {
 
@@ -29,18 +35,18 @@ public class VehicleClient {
 		//
 		// Vehicle v = director.build(builder);
 		//
-		// System.out.println(v);
+		// logger.info(v);
 
 		VehicleFactory carFactory = new CarFactory();
 		Vehicle car = carFactory.build(DrivingStyle.ECONOMICAL, Colour.BLUE);
-		System.out.println(car);
+		logger.info(car);
 
 		VehicleFactory vanFactory = new VanFactory();
 		Vehicle van = vanFactory.build(DrivingStyle.POWERFUL, Colour.WHITE);
-		System.out.println(van);
+		logger.info(van);
 
 		Vehicle sporty = VehicleFactory.make(Category.CAR,DrivingStyle.ECONOMICAL, Colour.RED);
-		System.out.println(sporty);
+		logger.info(sporty);
 
 	}
 

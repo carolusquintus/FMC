@@ -1,5 +1,7 @@
 package com.fmc.client;
 
+import org.apache.log4j.Logger;
+
 import com.fmc.item.Assembly;
 import com.fmc.item.Item;
 import com.fmc.item.Part;
@@ -16,6 +18,8 @@ import com.fmc.item.Part;
  *
  */
 public class ItemManager {
+	
+	private static final Logger logger = Logger.getLogger(ItemManager.class);
 
 	public static void main(String[] args) {
 		Item nut = new Part("Nut", 5);
@@ -34,11 +38,11 @@ public class ItemManager {
 		gizmo.getCost();
 		widget.getCost();
 		
-		System.out.println(nut);
-		System.out.println(bolt);
-		System.out.println(panel);
-		System.out.println(gizmo);
-		System.out.println(widget);
+		logger.info(nut);
+		logger.info(bolt);
+		logger.info(panel);
+		logger.info(gizmo);
+		logger.info(widget);
 	}
 
 }

@@ -1,5 +1,7 @@
 package com.fmc.client;
 
+import org.apache.log4j.Logger;
+
 import com.fmc.manager.VehicleManagerLazy;
 import com.fmc.vehicle.Vehicle;
 
@@ -15,6 +17,8 @@ import com.fmc.vehicle.Vehicle;
  *
  */
 public class AgencyClient {
+	
+	private static final Logger logger = Logger.getLogger(AgencyClient.class);
 
 	public static void main(String[] args) {
 		
@@ -23,12 +27,12 @@ public class AgencyClient {
 		Vehicle vehicle1 = manager.createSaloon();
 		Vehicle vehicle2 = manager.createSaloon();
 		
-		//System.out.println(vehicle1.hashCode());
-		//System.out.println(vehicle2.hashCode());
+		//logger.info(vehicle1.hashCode());
+		//logger.info(vehicle2.hashCode());
 		
-		System.out.println(vehicle1 == vehicle2);
+		logger.info(vehicle1 == vehicle2);
 		
-		System.out.println(vehicle1.equals(vehicle2));
+		logger.info(vehicle1.equals(vehicle2));
 
 	}
 

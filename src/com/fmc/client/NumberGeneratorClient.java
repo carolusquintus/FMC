@@ -1,5 +1,7 @@
 package com.fmc.client;
 
+import org.apache.log4j.Logger;
+
 import com.fmc.serializer.SerialNumberGenerator;
 
 /**
@@ -14,35 +16,37 @@ import com.fmc.serializer.SerialNumberGenerator;
  *
  */
 public class NumberGeneratorClient {
+	
+	private static final Logger logger = Logger.getLogger(NumberGeneratorClient.class);
 
 	public static void main(String[] args) {
-		System.out.println("Using traditional singleton");
+		logger.info("Using traditional singleton");
 		
 //		SerialNumberGeneratorTraditional generator = SerialNumberGeneratorTraditional.getInstance();
-//		System.out.println(generator.hashCode());
-//		System.out.println("Next serial: " + generator.getNextSerial());
+//		logger.info(generator.hashCode());
+//		logger.info("Next serial: " + generator.getNextSerial());
 //		generator = SerialNumberGeneratorTraditional.getInstance();
-//		System.out.println(generator.hashCode());
-//		System.out.println("Next serial: " + generator.getNextSerial());
+//		logger.info(generator.hashCode());
+//		logger.info("Next serial: " + generator.getNextSerial());
 //		generator = SerialNumberGeneratorTraditional.getInstance();
-//		System.out.println(generator.hashCode());
-//		System.out.println("Next serial: " + generator.getNextSerial());
+//		logger.info(generator.hashCode());
+//		logger.info("Next serial: " + generator.getNextSerial());
 		
 		SerialNumberGenerator generator = SerialNumberGenerator.ENGINE;
-		System.out.println(generator.hashCode());
-		System.out.println("Next serial: " + generator.getNextSerial());
+		logger.info(generator.hashCode());
+		logger.info("Next serial: " + generator.getNextSerial());
 		generator = SerialNumberGenerator.VEHICLE;
-		System.out.println(generator.hashCode());
-		System.out.println("Next serial: " + generator.getNextSerial());
+		logger.info(generator.hashCode());
+		logger.info("Next serial: " + generator.getNextSerial());
 		generator = SerialNumberGenerator.ENGINE;
-		System.out.println(generator.hashCode());
-		System.out.println("Next serial: " + generator.getNextSerial());
+		logger.info(generator.hashCode());
+		logger.info("Next serial: " + generator.getNextSerial());
 		generator = SerialNumberGenerator.VEHICLE;
-		System.out.println(generator.hashCode());
-		System.out.println("Next serial: " + generator.getNextSerial());
+		logger.info(generator.hashCode());
+		logger.info("Next serial: " + generator.getNextSerial());
 		generator = SerialNumberGenerator.VEHICLE;
-		System.out.println(generator.hashCode());
-		System.out.println("Next serial: " + generator.getNextSerial());
+		logger.info(generator.hashCode());
+		logger.info("Next serial: " + generator.getNextSerial());
 
 	}
 

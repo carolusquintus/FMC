@@ -1,5 +1,7 @@
 package com.fmc.factory.vehicle;
 
+import org.apache.log4j.Logger;
+
 import com.fmc.factory.component.CarComponentFactory;
 import com.fmc.vehicle.Vehicle;
 import com.fmc.vehicle.car.AbstractCar;
@@ -16,6 +18,8 @@ import com.fmc.vehicle.car.AbstractCar;
  *
  */
 public class CarBuilder extends VehicleBuilder {
+	
+	private static final Logger logger = Logger.getLogger(CarBuilder.class);
 
 	private AbstractCar car;
 
@@ -27,33 +31,33 @@ public class CarBuilder extends VehicleBuilder {
 	@Override
 	public void buildBody() {
 		super.buildBody();
-		System.out.println("Building car body");
+		logger.info("Building car body");
 		factory.createBody().getBodyParts();
 	}
 
 	@Override
 	public void buildBoot() {
 		super.buildBoot();
-		System.out.println("Building car boot");
+		logger.info("Building car boot");
 	}
 
 	@Override
 	public void buildChassis() {
 		super.buildChassis();
-		System.out.println("Building car chassis");
+		logger.info("Building car chassis");
 		factory.createChassis().getChassisParts();
 	}
 
 	@Override
 	public void buildPassengerArea() {
 		super.buildPassengerArea();
-		System.out.println("Building car passenger area");
+		logger.info("Building car passenger area");
 	}
 
 	@Override
 	public void buildWindows() {		
 		super.buildWindows();
-		System.out.println("Building car windows");
+		logger.info("Building car windows");
 		factory.createWindows().getWindowParts();
 	}
 

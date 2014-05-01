@@ -3,6 +3,8 @@ package com.fmc.client;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.log4j.Logger;
+
 import com.fmc.engine.Engine;
 import com.fmc.engine.impl.StandardEngine;
 import com.fmc.engine.impl.SuperGreenEngineAdapter;
@@ -21,6 +23,8 @@ import com.gmc.engine.SuperGreenEngine;
  *
  */
 public class ProductionEngineClient {
+	
+	private static final Logger logger = Logger.getLogger(ProductionEngineClient.class);
 
 	public static void main(String[] args) {
 		
@@ -32,10 +36,10 @@ public class ProductionEngineClient {
 		SuperGreenEngine greenEngine = new SuperGreenEngine(1200);
 		engines.add(new SuperGreenEngineAdapter(greenEngine));
 		
-		System.out.println(greenEngine);
+		logger.info(greenEngine);
 		
 		for (Engine engine : engines) {
-			System.out.println(engine);
+			logger.info(engine);
 		}
 	}
 

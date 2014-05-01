@@ -1,5 +1,7 @@
 package com.fmc.engine;
 
+import org.apache.log4j.Logger;
+
 /**
  *
  * Foo Motor Company
@@ -12,6 +14,8 @@ package com.fmc.engine;
  *
  */
 public abstract class AbstractEngine implements Engine {
+	
+	private static final Logger logger = Logger.getLogger(AbstractEngine.class);
 	
 	private int size;
 	private boolean turbo;
@@ -38,21 +42,21 @@ public abstract class AbstractEngine implements Engine {
 	@Override
 	public void start() {
 		this.running = true;
-		System.out.println("Engine started");
+		logger.info("Engine started");
 	}
 
 	@Override
 	public void stop() {
 		this.running = false;
 		this.power = 0;
-		System.out.println("Engine stopped");
+		logger.info("Engine stopped");
 	}
 
 	@Override
 	public void increasePower() {
 		if (running && (power < 10)) {
 			power++;
-			System.out.println("Engine power increased to " + power);
+			logger.info("Engine power increased to " + power);
 		}
 	}
 
@@ -60,7 +64,7 @@ public abstract class AbstractEngine implements Engine {
 	public void decreasePower() {
 		if (running && (power > 0)) {
 			power--;
-			System.out.println("Engine power decreased to " + power);
+			logger.info("Engine power decreased to " + power);
 		}
 	}
 
