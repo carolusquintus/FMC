@@ -13,6 +13,8 @@ import com.fmc.serializer.SerialNumberGenerator;
  * Date: Apr 23, 2014
  *
  * @author carolus
+ * 
+ * Client class to test Singleton Pattern
  *
  */
 public class NumberGeneratorClient {

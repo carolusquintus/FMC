@@ -14,6 +14,8 @@ import com.fmc.engine.impl.StandardEngine;
  * Date: Apr 23, 2014
  *
  * @author carolus
+ * 
+ * Cliente class to test Bridge Pattern
  *
  */
 public class TestDrivingClients {

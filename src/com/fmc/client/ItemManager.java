@@ -15,6 +15,8 @@ import com.fmc.item.Part;
  * Date: Apr 23, 2014
  *
  * @author carolus
+ * 
+ * Class client to test Composite Pattern
  *
  */
 public class ItemManager {

@@ -20,22 +20,14 @@ import com.fmc.vehicle.Vehicle.Colour;
  *
  * @author carolus
  * 
- * Class client to test Factory Method Pattern
+ * Client class to test Factory Method Pattern
  *
  */
-public class VehicleClient {
+public class ConfiguratorClient {
 	
-	private static final Logger logger = Logger.getLogger(VehicleClient.class);
+	private static final Logger logger = Logger.getLogger(ConfiguratorClient.class);
 
 	public static void main(String[] args) {
-
-		// AbstractCar car = new Saloon(new TurboEngine(1300), Colour.BLACK);
-		// VehicleBuilder builder = new CarBuilder(car);
-		// VehicleDirector director = new CarDirector();
-		//
-		// Vehicle v = director.build(builder);
-		//
-		// logger.info(v);
 
 		VehicleFactory carFactory = new CarFactory();
 		Vehicle car = carFactory.build(DrivingStyle.ECONOMICAL, Colour.BLUE);

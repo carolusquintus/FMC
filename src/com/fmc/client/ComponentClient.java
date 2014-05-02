@@ -18,6 +18,8 @@ import com.fmc.factory.component.VanComponentFactory;
  * Date: Apr 23, 2014
  *
  * @author carolus
+ * 
+ * Client class to test Abstract Factory Pattern
  *
  */
 public class ComponentClient {

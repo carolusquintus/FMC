@@ -20,6 +20,8 @@ import com.gmc.engine.SuperGreenEngine;
  * Date: Apr 23, 2014
  *
  * @author carolus
+ * 
+ * Client class to test Adapter Pattern
  *
  */
 public class ProductionEngineClient {

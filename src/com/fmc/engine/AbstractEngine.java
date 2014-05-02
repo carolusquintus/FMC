@@ -70,7 +70,7 @@ public abstract class AbstractEngine implements Engine {
 
 	@Override
 	public String toString() {
-		return  new StringBuilder(getClass().getSimpleName()).append(" (").append(this.size).append(")").toString();
+		return new StringBuilder(getClass().getSimpleName()).append(" (").append(this.size).append(")").toString();
 	}
 	
 	

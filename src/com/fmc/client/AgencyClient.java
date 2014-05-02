@@ -14,6 +14,8 @@ import com.fmc.vehicle.Vehicle;
  * Date: Apr 23, 2014
  *
  * @author carolus
+ * 
+ * Client class to test Prototype Pattern
  *
  */
 public class AgencyClient {
