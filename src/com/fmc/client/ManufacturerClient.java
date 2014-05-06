@@ -20,6 +20,8 @@ import com.fmc.vehicle.car.impl.Saloon;
  * Date: May 1, 2014
  *
  * @author carolus
+ * 
+ * Client class to test Builder Pattern
  *
  */
 public class ManufacturerClient {
