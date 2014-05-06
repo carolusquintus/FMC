@@ -1,5 +1,7 @@
 package com.fmc.vehicle;
 
+import org.apache.log4j.Logger;
+
 import com.fmc.engine.Engine;
 
 /**
@@ -14,6 +16,8 @@ import com.fmc.engine.Engine;
  *
  */
 public abstract class AbstractVehicle implements Vehicle {
+	
+	private static Logger logger = Logger.getLogger(AbstractVehicle.class);
 
 	private Engine engine;
 	private Colour colour;
@@ -52,6 +56,26 @@ public abstract class AbstractVehicle implements Vehicle {
 			e.printStackTrace();
 		}
 		return obj;
+	}
+
+	@Override
+	public void cleanInterior() {
+		logger.info("Cleaning interior");
+	}
+
+	@Override
+	public void cleanExteriorBody() {
+		logger.info("Cleaning exterior");
+	}
+
+	@Override
+	public void polishWindows() {
+		logger.info("Polishing windows");
+	}
+
+	@Override
+	public void takeForTestDrive() {
+		logger.info("Taking for test drive");
 	}
 
 	@Override
