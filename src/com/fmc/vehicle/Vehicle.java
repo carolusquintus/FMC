@@ -19,12 +19,14 @@ public interface Vehicle extends Cloneable {
 		UNPAINTED, BLUE, BLACK, GREEN, RED, SILVER, WHITE, YELLOW
 	}
 
-	Engine getEngine();
+	public Engine getEngine();
 
-	Colour getColour();
+	public Colour getColour();
 
-	void paint(Colour colour);
+	public void paint(Colour colour);
 
-	Object clone();
+	public Object clone();
+	
+	public double getPrice();
 
 }

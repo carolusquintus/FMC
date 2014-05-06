@@ -24,4 +24,9 @@ public class BoxVan extends AbstractVan {
 		super(engine, colour);
 	}
 
+	@Override
+	public double getPrice() {
+		return 10000;
+	}
+
 }

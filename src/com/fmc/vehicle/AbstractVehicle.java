@@ -57,7 +57,10 @@ public abstract class AbstractVehicle implements Vehicle {
 	@Override
 	public String toString() {
 		return new StringBuilder().append(getClass().getSimpleName())
-				.append(" (").append(engine).append(", ").append(colour)
+				.append(" (")
+				.append("Engine: ").append(engine).append(", ")
+				.append("Colour: ").append(colour).append(", ")
+				.append("Price: $").append(getPrice())
 				.append(")").toString();
 	}
 }
