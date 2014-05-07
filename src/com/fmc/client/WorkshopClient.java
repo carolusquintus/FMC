@@ -1,4 +1,4 @@
-package com.fmc;
+package com.fmc.client;
 
 import org.apache.log4j.Logger;
 
