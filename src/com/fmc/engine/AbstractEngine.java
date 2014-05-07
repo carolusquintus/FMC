@@ -2,6 +2,8 @@ package com.fmc.engine;
 
 import org.apache.log4j.Logger;
 
+import com.fmc.workshop.DiagnosticTool;
+
 /**
  *
  * Foo Motor Company
@@ -66,6 +68,11 @@ public abstract class AbstractEngine implements Engine {
 			power--;
 			logger.info("Engine power decreased to " + power);
 		}
+	}
+
+	@Override
+	public void diagnose(DiagnosticTool tool) {
+		tool.runDiagnosis(this);
 	}
 
 	@Override
