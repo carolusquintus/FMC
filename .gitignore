@@ -12,3 +12,7 @@
 
 # Logs directory
 log/
+
+# IDEA config files
+*.iml
+.idea/
