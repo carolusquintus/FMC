@@ -26,7 +26,6 @@ public class Pickup extends AbstractVan {
 
 	@Override
 	public double getPrice() {
-		// TODO Auto-generated method stub
 		return 9000;
 	}
 

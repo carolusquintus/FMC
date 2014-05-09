@@ -16,3 +16,4 @@ log/
 # IDEA config files
 *.iml
 .idea/
+out/

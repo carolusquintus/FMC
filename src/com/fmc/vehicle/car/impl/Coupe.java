@@ -26,7 +26,6 @@ public class Coupe extends AbstractCar {
 
 	@Override
 	public double getPrice() {
-		// TODO Auto-generated method stub
 		return 7000;
 	}
 
