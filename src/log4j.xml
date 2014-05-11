@@ -10,7 +10,7 @@
 		</layout>
 	</appender>
 
-	<!-- APPENDER: rollingFileSize -->
+	<!-- APPENDER: file -->
 	<appender name="file" class="org.apache.log4j.RollingFileAppender">
 		<param name="File" value="log/fmc.log" />
 		<param name="MaxFileSize" value="20MB" />
