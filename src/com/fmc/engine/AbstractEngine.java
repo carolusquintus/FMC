@@ -16,14 +16,14 @@ import com.fmc.workshop.DiagnosticTool;
  *
  */
 public abstract class AbstractEngine implements Engine {
-	
-	private static final Logger logger = Logger.getLogger(AbstractEngine.class);
-	
+
+	private static final Logger log = Logger.getLogger(AbstractEngine.class);
+
 	private int size;
 	private boolean turbo;
 	private boolean running;
 	private int power;
-	
+
 	public AbstractEngine(final int size, final boolean turbo) {
 		this.size = size;
 		this.turbo = turbo;
@@ -44,21 +44,21 @@ public abstract class AbstractEngine implements Engine {
 	@Override
 	public void start() {
 		this.running = true;
-		logger.info("Engine started");
+		log.info("Engine started");
 	}
 
 	@Override
 	public void stop() {
 		this.running = false;
 		this.power = 0;
-		logger.info("Engine stopped");
+		log.info("Engine stopped");
 	}
 
 	@Override
 	public void increasePower() {
 		if (running && (power < 10)) {
 			power++;
-			logger.info("Engine power increased to " + power);
+			log.info("Engine power increased to " + power);
 		}
 	}
 
@@ -66,7 +66,7 @@ public abstract class AbstractEngine implements Engine {
 	public void decreasePower() {
 		if (running && (power > 0)) {
 			power--;
-			logger.info("Engine power decreased to " + power);
+			log.info("Engine power decreased to " + power);
 		}
 	}
 
@@ -79,6 +79,6 @@ public abstract class AbstractEngine implements Engine {
 	public String toString() {
 		return new StringBuilder(getClass().getSimpleName()).append(" (").append(this.size).append(")").toString();
 	}
-	
-	
+
+
 }

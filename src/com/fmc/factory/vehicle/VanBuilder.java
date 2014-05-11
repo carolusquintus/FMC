@@ -19,7 +19,7 @@ import com.fmc.vehicle.van.AbstractVan;
  */
 public class VanBuilder extends VehicleBuilder {
 	
-	private static final Logger logger = Logger.getLogger(VanBuilder.class);
+	private static final Logger log = Logger.getLogger(VanBuilder.class);
 	
 	private AbstractVan van;
 	
@@ -31,27 +31,27 @@ public class VanBuilder extends VehicleBuilder {
 	@Override
 	public void buildBody() {
 		super.buildBody();
-		logger.info("Building van body");
+		log.info("Building van body");
 		factory.createBody().getBodyParts();
 	}
 
 	@Override
 	public void buildChassis() {
 		super.buildChassis();
-		logger.info("Building van chassis");
+		log.info("Building van chassis");
 		factory.createChassis().getChassisParts();
 	}
 
 	@Override
 	public void buildReinforcedStorageArea() {
 		super.buildReinforcedStorageArea();
-		logger.info("Building van storage area");
+		log.info("Building van storage area");
 	}
 
 	@Override
 	public void buildWindows() {
 		super.buildWindows();
-		logger.info("Building van windows");
+		log.info("Building van windows");
 		factory.createWindows().getWindowParts();
 	}
 

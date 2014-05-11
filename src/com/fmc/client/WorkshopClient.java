@@ -20,8 +20,8 @@ import com.fmc.workshop.impl.EngineDiagnosticTool;
  *
  */
 public class WorkshopClient {
-	
-	private static Logger logger = Logger.getLogger(WorkshopClient.class);
+
+	private static final Logger log = Logger.getLogger(WorkshopClient.class);
 
 	public static void main(String[] args) {
 		
@@ -43,15 +43,15 @@ public class WorkshopClient {
 		Engine standard5 = factory.getStandardEngine(1600);
 		standard5.diagnose(tool);
 		
-		logger.info(standard1.hashCode());
-		logger.info(standard2.hashCode());
-		logger.info(standard1.equals(standard2));
-		logger.info(standard3.hashCode());
-		logger.info(standard2.equals(standard3));
-		logger.info(standard4.hashCode());
-		logger.info(standard3.equals(standard4));
-		logger.info(standard5.hashCode());
-		logger.info(standard4.equals(standard5));
+		log.info(standard1.hashCode());
+		log.info(standard2.hashCode());
+		log.info(standard1.equals(standard2));
+		log.info(standard3.hashCode());
+		log.info(standard2.equals(standard3));
+		log.info(standard4.hashCode());
+		log.info(standard3.equals(standard4));
+		log.info(standard5.hashCode());
+		log.info(standard4.equals(standard5));
 	}
 
 }

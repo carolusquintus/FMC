@@ -25,20 +25,20 @@ import com.fmc.vehicle.Vehicle.Colour;
  */
 public class ConfiguratorClient {
 	
-	private static final Logger logger = Logger.getLogger(ConfiguratorClient.class);
+	private static final Logger log = Logger.getLogger(ConfiguratorClient.class);
 
 	public static void main(String[] args) {
 
 		VehicleFactory carFactory = new CarFactory();
 		Vehicle car = carFactory.build(DrivingStyle.ECONOMICAL, Colour.BLUE);
-		logger.info(car);
+		log.info(car);
 
 		VehicleFactory vanFactory = new VanFactory();
 		Vehicle van = vanFactory.build(DrivingStyle.POWERFUL, Colour.WHITE);
-		logger.info(van);
+		log.info(van);
 
 		Vehicle sporty = VehicleFactory.make(Category.CAR,DrivingStyle.ECONOMICAL, Colour.RED);
-		logger.info(sporty);
+		log.info(sporty);
 
 	}
 

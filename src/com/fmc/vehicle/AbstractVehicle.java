@@ -17,7 +17,7 @@ import com.fmc.engine.Engine;
  */
 public abstract class AbstractVehicle implements Vehicle {
 	
-	private static Logger logger = Logger.getLogger(AbstractVehicle.class);
+	private static final Logger log = Logger.getLogger(AbstractVehicle.class);
 
 	private Engine engine;
 	private Colour colour;
@@ -60,22 +60,22 @@ public abstract class AbstractVehicle implements Vehicle {
 
 	@Override
 	public void cleanInterior() {
-		logger.info("Cleaning interior");
+		log.info("Cleaning interior");
 	}
 
 	@Override
 	public void cleanExteriorBody() {
-		logger.info("Cleaning exterior");
+		log.info("Cleaning exterior");
 	}
 
 	@Override
 	public void polishWindows() {
-		logger.info("Polishing windows");
+		log.info("Polishing windows");
 	}
 
 	@Override
 	public void takeForTestDrive() {
-		logger.info("Taking for test drive");
+		log.info("Taking for test drive");
 	}
 
 	@Override

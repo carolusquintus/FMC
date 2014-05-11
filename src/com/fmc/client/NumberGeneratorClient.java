@@ -19,36 +19,36 @@ import com.fmc.serializer.SerialNumberGenerator;
  */
 public class NumberGeneratorClient {
 	
-	private static final Logger logger = Logger.getLogger(NumberGeneratorClient.class);
+	private static final Logger log = Logger.getLogger(NumberGeneratorClient.class);
 
 	public static void main(String[] args) {
-		logger.info("Using traditional singleton");
+		log.info("Using traditional singleton");
 		
 //		SerialNumberGeneratorTraditional generator = SerialNumberGeneratorTraditional.getInstance();
-//		logger.info(generator.hashCode());
-//		logger.info("Next serial: " + generator.getNextSerial());
+//		log.info(generator.hashCode());
+//		log.info("Next serial: " + generator.getNextSerial());
 //		generator = SerialNumberGeneratorTraditional.getInstance();
-//		logger.info(generator.hashCode());
-//		logger.info("Next serial: " + generator.getNextSerial());
+//		log.info(generator.hashCode());
+//		log.info("Next serial: " + generator.getNextSerial());
 //		generator = SerialNumberGeneratorTraditional.getInstance();
-//		logger.info(generator.hashCode());
-//		logger.info("Next serial: " + generator.getNextSerial());
+//		log.info(generator.hashCode());
+//		log.info("Next serial: " + generator.getNextSerial());
 		
 		SerialNumberGenerator generator = SerialNumberGenerator.ENGINE;
-		logger.info(generator.hashCode());
-		logger.info("Next serial: " + generator.getNextSerial());
+		log.info(generator.hashCode());
+		log.info("Next serial: " + generator.getNextSerial());
 		generator = SerialNumberGenerator.VEHICLE;
-		logger.info(generator.hashCode());
-		logger.info("Next serial: " + generator.getNextSerial());
+		log.info(generator.hashCode());
+		log.info("Next serial: " + generator.getNextSerial());
 		generator = SerialNumberGenerator.ENGINE;
-		logger.info(generator.hashCode());
-		logger.info("Next serial: " + generator.getNextSerial());
+		log.info(generator.hashCode());
+		log.info("Next serial: " + generator.getNextSerial());
 		generator = SerialNumberGenerator.VEHICLE;
-		logger.info(generator.hashCode());
-		logger.info("Next serial: " + generator.getNextSerial());
+		log.info(generator.hashCode());
+		log.info("Next serial: " + generator.getNextSerial());
 		generator = SerialNumberGenerator.VEHICLE;
-		logger.info(generator.hashCode());
-		logger.info("Next serial: " + generator.getNextSerial());
+		log.info(generator.hashCode());
+		log.info("Next serial: " + generator.getNextSerial());
 
 	}
 

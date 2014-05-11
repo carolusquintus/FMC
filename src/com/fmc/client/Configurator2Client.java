@@ -28,22 +28,22 @@ import com.fmc.vehicle.option.impl.SatNavVehicle;
  */
 public class Configurator2Client {
 	
-	private static final Logger logger = Logger.getLogger(Configurator2Client.class);
+	private static final Logger log = Logger.getLogger(Configurator2Client.class);
 
 	public static void main(String[] args) {
 		Vehicle vehicle = VehicleFactory.make(Category.CAR, DrivingStyle.ECONOMICAL, Colour.BLUE);
-		logger.info(vehicle);
+		log.info(vehicle);
 		
 		vehicle = new AirConditionedVehicle(vehicle);
-		logger.info(vehicle);
+		log.info(vehicle);
 		vehicle = new AlloyWheeledVehicle(vehicle);
-		logger.info(vehicle);
+		log.info(vehicle);
 		vehicle = new LeatherSeatedVehicle(vehicle);
-		logger.info(vehicle);
+		log.info(vehicle);
 		vehicle = new MetallicPaintedVehicle(vehicle);
-		logger.info(vehicle);
+		log.info(vehicle);
 		vehicle = new SatNavVehicle(vehicle);
-		logger.info(vehicle);
+		log.info(vehicle);
 	}
 
 }

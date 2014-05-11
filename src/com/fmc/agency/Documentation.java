@@ -17,9 +17,9 @@ import com.fmc.vehicle.Vehicle;
  */
 public class Documentation {
 	
-	private static Logger logger = Logger.getLogger(Documentation.class);
+	private static final Logger log = Logger.getLogger(Documentation.class);
 	
 	public static void printBrochure(final Vehicle vehicle){
-		logger.info("Brochure printed");
+		log.info("Brochure printed");
 	}
 }

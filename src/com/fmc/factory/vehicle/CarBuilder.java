@@ -19,7 +19,7 @@ import com.fmc.vehicle.car.AbstractCar;
  */
 public class CarBuilder extends VehicleBuilder {
 	
-	private static final Logger logger = Logger.getLogger(CarBuilder.class);
+	private static final Logger log = Logger.getLogger(CarBuilder.class);
 
 	private AbstractCar car;
 
@@ -31,33 +31,33 @@ public class CarBuilder extends VehicleBuilder {
 	@Override
 	public void buildBody() {
 		super.buildBody();
-		logger.info("Building car body");
+		log.info("Building car body");
 		factory.createBody().getBodyParts();
 	}
 
 	@Override
 	public void buildBoot() {
 		super.buildBoot();
-		logger.info("Building car boot");
+		log.info("Building car boot");
 	}
 
 	@Override
 	public void buildChassis() {
 		super.buildChassis();
-		logger.info("Building car chassis");
+		log.info("Building car chassis");
 		factory.createChassis().getChassisParts();
 	}
 
 	@Override
 	public void buildPassengerArea() {
 		super.buildPassengerArea();
-		logger.info("Building car passenger area");
+		log.info("Building car passenger area");
 	}
 
 	@Override
 	public void buildWindows() {		
 		super.buildWindows();
-		logger.info("Building car windows");
+		log.info("Building car windows");
 		factory.createWindows().getWindowParts();
 	}
 

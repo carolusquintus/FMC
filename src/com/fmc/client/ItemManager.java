@@ -21,7 +21,7 @@ import com.fmc.item.Part;
  */
 public class ItemManager {
 	
-	private static final Logger logger = Logger.getLogger(ItemManager.class);
+	private static final Logger log = Logger.getLogger(ItemManager.class);
 
 	public static void main(String[] args) {
 		Item nut = new Part("Nut", 5);
@@ -40,11 +40,11 @@ public class ItemManager {
 		gizmo.getCost();
 		widget.getCost();
 		
-		logger.info(nut);
-		logger.info(bolt);
-		logger.info(panel);
-		logger.info(gizmo);
-		logger.info(widget);
+		log.info(nut);
+		log.info(bolt);
+		log.info(panel);
+		log.info(gizmo);
+		log.info(widget);
 	}
 
 }

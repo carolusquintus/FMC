@@ -17,7 +17,7 @@ import org.apache.log4j.Logger;
  */
 public class EngineProxy implements Engine {
 
-    private static final Logger logger = Logger.getLogger(EngineProxy.class);
+    private static final Logger log = Logger.getLogger(EngineProxy.class);
 
     private Engine engine;
 
@@ -65,13 +65,13 @@ public class EngineProxy implements Engine {
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
-                logger.info("Running tool as thread");
+                log.info("Running tool as thread");
                 engine.diagnose(tool);
             }
         });
 
         thread.start();
 
-        logger.info("EngineProxy diagnose() method finished");
+        log.info("EngineProxy diagnose() method finished");
     }
 }

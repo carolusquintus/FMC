@@ -24,7 +24,7 @@ import com.fmc.factory.component.VanComponentFactory;
  */
 public class ComponentClient {
 	
-	private static final Logger logger = Logger.getLogger(ComponentClient.class);
+	private static final Logger log = Logger.getLogger(ComponentClient.class);
 
 	public static void main(String[] args) {
 
@@ -46,9 +46,9 @@ public class ComponentClient {
 				Chassis vehicleChassis = factory.createChassis();
 				Windows vehicleWindows = factory.createWindows();
 
-				logger.info(vehicleBody.getBodyParts());
-				logger.info(vehicleChassis.getChassisParts());
-				logger.info(vehicleWindows.getWindowParts());
+				log.info(vehicleBody.getBodyParts());
+				log.info(vehicleChassis.getChassisParts());
+				log.info(vehicleWindows.getWindowParts());
 
 			} else {
 				throw new Exception("Solo se permite un argumento");

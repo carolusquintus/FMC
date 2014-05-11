@@ -26,7 +26,7 @@ import com.gmc.engine.SuperGreenEngine;
  */
 public class ProductionEngineClient {
 	
-	private static final Logger logger = Logger.getLogger(ProductionEngineClient.class);
+	private static final Logger log = Logger.getLogger(ProductionEngineClient.class);
 
 	public static void main(String[] args) {
 		
@@ -38,10 +38,10 @@ public class ProductionEngineClient {
 		SuperGreenEngine greenEngine = new SuperGreenEngine(1200);
 		engines.add(new SuperGreenEngineAdapter(greenEngine));
 		
-		logger.info(greenEngine);
+		log.info(greenEngine);
 		
 		for (Engine engine : engines) {
-			logger.info(engine);
+			log.info(engine);
 		}
 	}
 

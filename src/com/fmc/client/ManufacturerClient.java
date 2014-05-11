@@ -26,7 +26,7 @@ import com.fmc.vehicle.car.impl.Saloon;
  */
 public class ManufacturerClient {
 
-	private static final Logger logger = Logger.getLogger(ManufacturerClient.class);
+	private static final Logger log = Logger.getLogger(ManufacturerClient.class);
 	
 	public static void main(String[] args) {
 		 AbstractCar car = new Saloon(new StandardEngine(1300));
@@ -35,7 +35,7 @@ public class ManufacturerClient {
 		
 		 Vehicle v = director.build(builder);
 		
-		 logger.info(v);
+		 log.info(v);
 	}
 
 }

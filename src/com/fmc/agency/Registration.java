@@ -17,7 +17,7 @@ import com.fmc.vehicle.Vehicle;
  */
 public class Registration {
 
-	private static Logger logger = Logger.getLogger(Registration.class);
+	private static final Logger log = Logger.getLogger(Registration.class);
 
 	private Vehicle vehicle;
 
@@ -26,11 +26,11 @@ public class Registration {
 	}
 
 	public void allocateLicensePlate() {
-		logger.info("License plate allocated");
+		log.info("License plate allocated");
 	}
 
 	public void allocateVehicleNumber() {
-		logger.info("Vehicle number allocated");
+		log.info("Vehicle number allocated");
 	}
 
 }
