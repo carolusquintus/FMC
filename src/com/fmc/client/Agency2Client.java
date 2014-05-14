@@ -24,7 +24,7 @@ public class Agency2Client {
 
 	public static void main(String[] args) {
 		
-		Vehicle vehicle = VehicleFactory.make(Category.CAR, DrivingStyle.POWERFUL, Colour.RED);
+        Vehicle vehicle = VehicleFactory.make(Category.CAR, DrivingStyle.POWERFUL, Colour.RED);
 		
 		VehicleFacade facade = new VehicleFacade();
 		facade.prepareForSale(vehicle);

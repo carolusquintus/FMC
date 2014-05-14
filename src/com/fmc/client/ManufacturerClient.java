@@ -26,16 +26,17 @@ import com.fmc.vehicle.car.impl.Saloon;
  */
 public class ManufacturerClient {
 
-	private static final Logger log = Logger.getLogger(ManufacturerClient.class);
+    private static final Logger log = Logger.getLogger(ManufacturerClient.class);
 	
 	public static void main(String[] args) {
-		 AbstractCar car = new Saloon(new StandardEngine(1300));
-		 VehicleBuilder builder = new CarBuilder(car);
-		 VehicleDirector director = new CarDirector();
+
+        AbstractCar car = new Saloon(new StandardEngine(1300));
+		VehicleBuilder builder = new CarBuilder(car);
+		VehicleDirector director = new CarDirector();
+
+        Vehicle v = director.build(builder);
 		
-		 Vehicle v = director.build(builder);
-		
-		 log.info(v);
+		log.info(v);
 	}
 
 }
