@@ -1,5 +1,6 @@
 package com.fmc.factory.vehicle;
 
+import com.fmc.engine.Engine;
 import com.fmc.engine.impl.StandardEngine;
 import com.fmc.engine.impl.TurboEngine;
 import com.fmc.vehicle.Vehicle;
@@ -39,5 +40,25 @@ public class CarFactory extends VehicleFactory {
 		
 		return vehicle;
 	}
+
+    @Override
+    protected Vehicle selectVehicle(DrivingStyle style, Engine engine) {
+
+        Vehicle vehicle = null;
+
+        switch (style) {
+            case ECONOMICAL:
+                vehicle = new Saloon(engine);
+                break;
+            case MIDRANGE:
+                vehicle = new Coupe(engine);
+                break;
+            case POWERFUL:
+                vehicle = new Sport(engine);
+                break;
+        }
+
+        return vehicle;
+    }
 
 }
