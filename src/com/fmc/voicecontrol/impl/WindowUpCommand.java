@@ -18,7 +18,7 @@ public class WindowUpCommand implements Command {
 
     private ElectricWindow window;
 
-    public WindowUpCommand(ElectricWindow window){
+    public WindowUpCommand(ElectricWindow window) {
         this.window = window;
     }
 
