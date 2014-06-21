@@ -20,7 +20,7 @@ public class MostSoutherlyExpression implements Expression{
 
     private List<Expression> expressions;
 
-    public MostSoutherlyExpression(List<Expression> expressions){
+    public MostSoutherlyExpression(List<Expression> expressions) {
         this.expressions = expressions;
     }
 
@@ -31,7 +31,7 @@ public class MostSoutherlyExpression implements Expression{
         for (Expression currentExpression : expressions) {
             City currentCity = currentExpression.interpret();
 
-            if (currentCity.getLatitude() < resultingCity.getLatitude()){
+            if (currentCity.getLatitude() < resultingCity.getLatitude()) {
                 resultingCity = currentCity;
             }
         }

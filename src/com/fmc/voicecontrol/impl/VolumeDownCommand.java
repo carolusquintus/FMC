@@ -18,7 +18,7 @@ public class VolumeDownCommand implements Command{
 
     private Radio radio;
 
-    public VolumeDownCommand(Radio radio){
+    public VolumeDownCommand(Radio radio) {
         this.radio = radio;
     }
 

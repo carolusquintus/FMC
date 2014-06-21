@@ -16,24 +16,24 @@ public class SpeechRecogniser {
     private Command upCommand;
     private Command downCommand;
 
-    public void setCommands(final Command upCommand, final Command downCommand){
+    public void setCommands(final Command upCommand, final Command downCommand) {
         this.upCommand = upCommand;
         this.downCommand = downCommand;
     }
 
-    public void hearUpSpoken(){
+    public void hearUpSpoken() {
         upCommand.execute();
     }
 
-    public void hearDownSpoken(){
+    public void hearDownSpoken() {
         downCommand.execute();
     }
 
-    public void hearCancelUpSpoken(){
+    public void hearCancelUpSpoken() {
         upCommand.undo();
     }
 
-    public void hearCancelDownSpoken(){
+    public void hearCancelDownSpoken() {
         downCommand.undo();
     }
 }

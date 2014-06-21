@@ -24,41 +24,41 @@ public class Radio {
     public boolean on;
     public int volume;
 
-    public Radio(){
+    public Radio() {
         on = false;
         volume = DEFAULT_VOLUME;
     }
 
-    public boolean isOn(){
+    public boolean isOn() {
         return on;
     }
 
-    public int getVolume(){
+    public int getVolume() {
         return volume;
     }
 
-    public void on(){
+    public void on() {
         on = true;
         log.info("Radio now on, volume level " + getVolume());
     }
 
-    public void off(){
+    public void off() {
         on = false;
         log.info("Radios now off");
     }
 
-    public void volumeUp(){
-        if (isOn()){
-            if (getVolume() < MAX_VOLUME){
+    public void volumeUp() {
+        if (isOn()) {
+            if (getVolume() < MAX_VOLUME) {
                 volume++;
                 log.info("Volume turned up to level " + getVolume());
             }
         }
     }
 
-    public void volumeDown(){
-        if (isOn()){
-            if (getVolume() > MIN_VOLUME){
+    public void volumeDown() {
+        if (isOn()) {
+            if (getVolume() > MIN_VOLUME) {
                 volume--;
                 log.info("Volume turned down to level " + getVolume());
             }

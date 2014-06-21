@@ -31,7 +31,7 @@ public class MostEasterlyExpression implements Expression {
         for (Expression currentExpression : expressions) {
             City currentCity = currentExpression.interpret();
 
-            if (currentCity.getLongitude() < resultingCity.getLongitude()){
+            if (currentCity.getLongitude() < resultingCity.getLongitude()) {
                 resultingCity = currentCity;
             }
         }

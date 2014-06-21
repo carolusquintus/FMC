@@ -18,7 +18,7 @@ public class WindowDownCommand implements Command{
 
     private ElectricWindow window;
 
-    public WindowDownCommand(ElectricWindow window){
+    public WindowDownCommand(ElectricWindow window) {
         this.window = window;
     }
 

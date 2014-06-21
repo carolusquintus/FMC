@@ -19,7 +19,7 @@ public class Documentation {
 	
 	private static final Logger log = Logger.getLogger(Documentation.class);
 	
-	public static void printBrochure(final Vehicle vehicle){
+	public static void printBrochure(final Vehicle vehicle) {
 		log.info("Brochure printed");
 	}
 }

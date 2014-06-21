@@ -32,22 +32,22 @@ public abstract class AbstractEmailHandler implements EmailHandler {
         if (matchingWords().length == 0) {
             wordFound = true;
         } else {
-            for(String word: matchingWords()){
-                if(matchWord(word, email)){
+            for(String word: matchingWords()) {
+                if(matchWord(word, email)) {
                     wordFound = true;
                     break;
                 }
             }
         }
 
-        if(wordFound){
+        if(wordFound) {
             handleHere(email);
         } else {
             nextHandler.processHandler(email);
         }
     }
 
-    public static void handle(String email){
+    public static void handle(String email) {
         EmailHandler spam = new SpamEmailHandler();
         EmailHandler sales = new SalesEmailHandler();
         EmailHandler service = new ServiceEmailHandler();

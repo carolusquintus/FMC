@@ -19,28 +19,28 @@ public class ElectricWindow {
 
     private boolean open;
 
-    public ElectricWindow(){
+    public ElectricWindow() {
         open = false;
         log.info("Window is closed");
     }
 
-    public boolean isOpen(){
+    public boolean isOpen() {
         return open;
     }
 
-    public boolean isClosed(){
+    public boolean isClosed() {
         return !open;
     }
 
-    public void openWindow(){
-        if (isClosed()){
+    public void openWindow() {
+        if (isClosed()) {
             open = true;
             log.info("Window is now open");
         }
     }
 
-    public void closeWindow(){
-        if (isOpen()){
+    public void closeWindow() {
+        if (isOpen()) {
             open = false;
             log.info("Window is now closed");
         }

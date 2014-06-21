@@ -45,7 +45,7 @@ public class DirectionalEvaluator {
 
             String expression = token.toLowerCase();
 
-            switch (expression){
+            switch (expression) {
                 case "northerly":
                     expressionStack.push(new MostNortherlyExpression(loadExpressions(expressionStack)));
                     break;

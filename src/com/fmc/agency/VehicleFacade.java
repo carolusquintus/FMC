@@ -26,7 +26,6 @@ public class VehicleFacade {
 		vehicle.cleanExteriorBody();
 		vehicle.polishWindows();
 		vehicle.takeForTestDrive();
-
 	}
 
 }

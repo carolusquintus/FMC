@@ -18,7 +18,7 @@ public class VolumeUpCommand implements Command {
 
     private Radio radio;
 
-    public VolumeUpCommand(Radio radio){
+    public VolumeUpCommand(Radio radio) {
         this.radio = radio;
     }
 

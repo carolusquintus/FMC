@@ -22,7 +22,7 @@ import java.util.Iterator;
  * @author carolus
  *
  */
-public class VanRange implements Iterable<Vehicle>{
+public class VanRange implements Iterable<Vehicle> {
 
     private Vehicle[] vans;
     private VehicleFactory factory;
